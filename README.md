@@ -20,5 +20,5 @@ This uses java for logic implementation.
 
 ## sonalkt527 CONTRIBUTION
 1.added a new splash screen
+
 2.resized adn realigned the buttons
->>>>>>> 82aa9c532287d5b3d4e94af9fda2340f63148b1e
