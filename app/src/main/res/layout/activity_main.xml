@@ -7,66 +7,59 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button_New"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="4dp"
-        android:layout_weight="1"
-        android:onClick="onclick"
-        android:text="New"
-        app:layout_constraintBottom_toTopOf="@+id/text_Writeup"
-        app:layout_constraintEnd_toStartOf="@+id/button_Save"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
-
-    <Button
         android:id="@+id/button_Save"
         android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginEnd="4dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:onClick="onclick"
         android:text="Save"
-        app:layout_constraintBottom_toTopOf="@+id/text_Writeup"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button_Open"
         app:layout_constraintStart_toEndOf="@+id/button_New"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Writeup"
         tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
 
     <Button
         android:id="@+id/button_Open"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_weight="1"
         android:onClick="onclick"
         android:text="Open"
-        app:layout_constraintBottom_toTopOf="@+id/text_Writeup"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/button_Save"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.222"
+        app:layout_constraintTop_toBottomOf="@+id/text_Writeup"
+        tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
+
+    <Button
+        android:id="@+id/button_New"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:onClick="onclick"
+        android:text="New"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_Save"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Writeup"
         tools:ignore="ButtonStyle,HardcodedText,UsingOnClickInXml" />
 
     <EditText
         android:id="@+id/text_Writeup"
         android:layout_width="0dp"
-        android:layout_height="672dp"
-        android:layout_marginStart="6dp"
-        android:layout_marginTop="4dp"
+        android:layout_height="0dp"
         android:autofillHints=""
         android:gravity="top"
         android:hint="@string/app_name"
         android:inputType="textMultiLine"
         android:scrollbars="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button_Save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_Save"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="LabelFor" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
